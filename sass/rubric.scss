@@ -1,0 +1,741 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgb(245, 245, 245);
+    width: 100%;
+    z-index: 999;
+        position: relative;
+
+    .morgin_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+        position: relative;
+        padding: 0 15px 0px 15px;
+        transition: .4s;
+
+        .logo {
+            font-family: 'Rowdies', cursive;
+            font-size: 30px;
+            color: rgb(137, 87, 156);
+            padding: 20px 0 20px 0px;
+            text-decoration: none;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+
+            span {
+                color: rgb(29, 205, 205);
+            }
+        }
+
+        .search {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 0 15px;
+            width: 84%;
+            text-align: center;
+            transition: margin .3s, opacity .3s, pointer-events 0s;
+
+            
+        .input_search {
+            width: 100%;
+            height: 40px;
+            border-radius: 50px 0 0 50px;
+            border: solid rgba(0, 0, 0, 0.169) 1px;
+            outline: none;
+            padding: 0 0 0 10px;
+            font-size: 15px;
+
+        }
+        .button_search {
+            border-radius: 0 50px 50px 0;
+            border: none;
+            border-left: none;
+            width: 60px;
+            background: rgb(137, 87, 156);
+            color: white;
+            cursor: pointer;
+
+            img {
+                width: 25px;
+                text-align: center;
+                padding: 3px 3px 0 0;
+            }
+        }
+        }  
+
+        .number {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            background: url(../img/free-icon-phone-call-5585562.png) no-repeat;
+            background-size: 16px;
+            padding: 0 0px 6px 20px;
+            margin: 0 10px 0 0;
+            white-space: nowrap;
+        }
+
+        .icons {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .lupa_two {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.397);
+            padding: 0 15px 0 15px;
+            cursor: pointer;
+            display: none;
+            @media ( max-width: 430px){
+                padding: 0 10px 0 15px;
+            }
+
+        img{
+            width: 30px;
+            margin: 0px 10px 0 0;
+
+            @media ( max-width: 430px){
+                width: 20px;
+                margin: 0 0 0 4px;
+            }
+        }
+
+        .lupa_two_text {
+            font-size: 14px;
+                font-weight: 400;
+                padding: 0px 0 0 0;
+
+                @media ( max-width: 430px){
+                    font-size: 13px;
+                }
+        }
+    }
+        
+        .cart {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.397);
+            border-left: solid rgba(0, 0, 0, 0.169) 1px;
+            padding: 0 0px 0 15px;
+
+            @media ( max-width: 430px){
+                padding: 0 0 0 10px;
+            }
+
+            img {
+                width: 30px;
+
+                @media ( max-width: 430px){
+                    width: 20px;
+                }
+            }
+            .cart_text {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 5px 0 0 0;
+
+                @media ( max-width: 430px){
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .menu {
+        background: white;
+        border-bottom: solid rgb(245, 245, 245) 1px;
+        position: relative;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto 0px auto;
+            padding: 0 15px 0 15px;
+
+        .men {
+            display: flex;
+            padding: 15px 0 15px 0;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+              }
+
+            .rem_men {
+                border-right: solid rgba(0, 0, 0, 0.306) 1px;
+                padding: 0 20px 0 0;
+            }
+
+        .rem {
+            list-style-type: none;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.607);
+            margin: 0 20px 0 0;
+            font-size: 14px;
+
+            &:hover {
+                color: rgb(137, 87, 156);
+            }
+        }
+    }
+
+    .rem:last-child {
+        border-right: solid rgba(0, 0, 0, 0.306) 1px;
+        padding: 0 15px 0 0;
+
+        @media (max-width: 1000px) {
+            border-right: none;
+        }
+    }
+
+    .soc_network {
+        margin: 0 0 0 -7px;
+        img {
+            width: 23px;
+            margin: 0 5px;
+            padding: 10px 0 10px 0;
+        }
+    }
+    }
+
+    .opas {
+        position: absolute;
+        height: 100%;
+        width: 50px;
+        background: black;
+        top: 0;
+        right: 0;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
+    }
+}
+}
+
+@media (max-width: 1270px) { 
+    .number {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) { 
+    .soc_network {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) { 
+
+    .search {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+    .header .container .lupa_two {
+        display: block;
+    }
+}
+
+@media (max-width: 430px) { 
+    .header .container .logo {
+        font-size: 25px;
+    }
+}
+@media (max-width: 370px) { 
+    .header .container .logo {
+        font-size: 20px;
+    }
+}
+@media (max-width: 320px) { 
+    .header .container .logo {
+        font-size: 16px;
+        padding: 20px 0 25px 0;
+    }
+}
+
+.search.active {
+    opacity: 1;
+    pointer-events: all;
+    margin: 117px auto 0 auto;
+    z-index: 1;
+}
+
+.morgin_header.active {
+    padding: 0 15px 50px 15px;
+}
+
+
+.card_product {
+    height: auto;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin: 10px 10px;
+    position: relative;
+}
+
+.CP_pic {
+    width: 100%;
+    height: 24vw;
+    max-height: 370px;
+    border-radius: 20px;
+    margin: 0 0 95px 0;
+}
+
+.CP_pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.CP_title {
+    width: 100%;
+    height: 43px;
+    padding: 10px 0 0 0;
+    font-size: 17px;
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+
+    &:hover {
+        color: rgb(137, 87, 156);
+    }
+}
+
+
+.CP_subtitle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 0 0;
+    justify-content: space-between;
+}
+
+.CP_price {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0 10px 0 0;
+
+}
+
+.discont_price {
+    color: rgb(215, 73, 73);
+&::after {
+    content: '950₽';
+    font-size: 13px;
+    text-decoration: line-through;
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+}
+
+.buy {
+    background: rgb(137, 87, 156);
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+
+    &:hover {
+        background: rgb(151, 102, 171);
+    }
+}
+
+.discont {
+    width: 40px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.catalog {
+    display: grid;
+    margin: 20px 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.CP_text {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+
+@media ( max-width: 1100px){
+    .catalog {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .CP_pic {
+        height: 30vw;
+    }
+    .CP_pic {
+       
+        max-height: 570px;
+    }
+}
+
+@media ( max-width: 900px){
+    .catalog {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .CP_pic {
+        height: 45vw;
+        margin: 0 0 90px 0;
+    }
+
+    .CP_price {
+        font-size: 22px;
+    }
+
+    .buy {
+        padding: 7px 17px;
+    }
+
+    .CP_pic {
+        max-height: 400px;
+    }
+
+}
+
+@media ( max-width: 650px){ 
+    .catalog {
+        grid-template-columns: 1fr 1fr;
+    }
+    .CP_pic {
+        height: 70vw;
+        margin: 0 0 90px 0;
+        max-height: 400px;
+    }
+}
+
+@media ( max-width: 350px){ 
+    .CP_pic {
+        height: 70vw;
+        margin: 0 0 85px 0;
+        max-height: 440px;
+    }
+
+    .buy {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+    .CP_price {
+        font-size: 20px;
+    }
+
+    .discont_price {
+    
+        &::after {
+            content: '950₽';
+            font-size: 13px;
+            text-decoration: line-through;
+            color: black;
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+        }
+        }
+}
+
+.oglav {
+    margin: 30px 15px -10px 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.758);
+
+}
+
+.button_shop {
+    color: rgb(151, 102, 171);
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin: 50px 0 70px 0;
+    text-decoration: none;
+    
+}
+
+.bh_text_shop {
+    border: solid rgb(151, 102, 171) 1px;
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+ 
+}
+
+.bh_text_shop.active {
+    background: rgb(151, 102, 171);
+    color: white;
+}
+
+.card_product:nth-child(n + 16) {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .card_product.is_visible {
+    visibility: visible;
+    position: relative;
+}
+
+
+.top_product {
+    display: block!important
+    };
+    
+    .likeit_wrap {
+        border: solid rgb(137, 87, 156) 3px;
+        border-radius: 10px;
+        padding: 30px 10px 20px 10px;
+        margin: 20px 15px 40px 15px;
+        position: relative;
+    
+        .likeit_text {
+            position: absolute;
+        top: -20px;
+        left: 20px;
+        font-size: 35px;
+        font-weight: normal;
+        background: white;
+        color: rgb(137, 87, 156);
+        padding: 0 5px;
+    
+        @media ( max-width: 380px){ 
+                font-size: 20px;
+                top: -14px;  
+        }
+        }
+
+    }
+    
+    .likeit {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        flex-wrap: wrap;
+    
+        @media ( max-width: 1000px){
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+        
+            a:nth-child(n + 5) {
+                visibility: hidden;
+                width: 0;
+                height: 0;
+              }
+        
+        
+        }
+    
+        @media ( max-width: 900px){
+                grid-template-columns: 1fr 1fr 1fr;
+            a:nth-child(n + 4) {
+                visibility: hidden;
+                width: 0;
+                height: 0;
+              }
+        
+        }
+        
+        @media ( max-width: 730px){ 
+    
+                grid-template-columns: 1fr 1fr;
+                a:nth-child(n + 3) {
+                    visibility: hidden;
+                    width: 0;
+                    height: 0;
+              }
+        
+              .CP_pic {
+                height: 75vw;
+                margin: 0 0 90px 0;
+                max-height: 420px;
+            }
+        }
+    
+        @media ( max-width: 650px){ 
+    
+          .CP_pic {
+            height: 65vw;
+            margin: 0 0 90px 0;
+            max-height: 380px;
+        }
+    }
+        
+        @media ( max-width: 380px){ 
+            .CP_pic {
+                height: 60vw;
+                margin: 0 0 85px 0;
+            }
+        
+            .buy {
+                padding: 6px 5px;
+                font-size: 10px;
+                display: none;
+            }
+            .CP_price {
+                margin: -10px 0 0 0;
+                font-size: 20px;
+            }
+        
+            .discont_price {
+            
+                &::after {
+                    content: '950₽';
+                    font-size: 13px;
+                    text-decoration: line-through;
+                    color: black;
+                    position: absolute;
+                    left: 0;
+                    bottom: 20px;
+                }
+                }
+        }
+    }
+
+
+//footer
+
+.footer {
+    background: rgb(245, 245, 245);
+
+    .container_footer {
+        max-width: 1270px;
+        margin: 0 auto;
+        padding: 10px 0 30px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .logo {
+            font-family: 'Rowdies', cursive;
+            font-size: 30px;
+            color: rgb(137, 87, 156);
+            padding: 0px 0 0px 15px;
+            text-decoration: none;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+
+            span {
+                color: rgb(29, 205, 205);
+            }
+
+            @media ( max-width: 400px){ 
+                font-size: 20px;
+            }
+        }
+        .men_footer {
+            display: flex;
+            width: 70%;
+            flex-wrap: wrap;
+            margin: 20px 15px 0 10px;
+            padding: 0 0 20px 0;
+
+            .rem_footer {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.627);
+                list-style-type: none;
+                margin: 5px 5px;
+                font-weight: bold;
+
+                &:hover {
+                    color: rgb(137, 87, 156);
+                }
+            }
+
+            .rem_men_footer {
+                border-right: solid rgba(0, 0, 0, 0.506) 1px;
+                padding: 0 10px 0 0;
+            }
+        }
+
+        .footer_right {
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: end;
+          
+            
+
+        .number_footer {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.712);
+            font-weight: bold;
+            background: url(../img/free-icon-phone-call-5585562.png) no-repeat;
+            background-size: 23px;
+            font-size: 22px;
+            padding: 0 0px 6px 30px;
+            margin: 0 10px 0 0;
+
+            @media ( max-width: 400px){ 
+                font-size: 18px;
+                background-size: 18px;
+                padding: 0 0 6px 18px;
+            }
+        }
+
+        .soc_network_footer {
+            padding: 0 15px 0 20px;
+            a {
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    } 
+}
+}
+
+.discl {
+    padding: 30px 0 0 15px;
+    color: rgba(0, 0, 0, 0.837);
+}
+
+@media ( max-width: 730px){ 
+
+    .container_footer{
+        align-items: baseline;
+    }
+    .footer_right {
+        flex-direction: column;
+        margin: 0 0 0 0px;
+    }
+    .footer_left {
+        margin: 0 20px 0 0px;
+    }
+    .soc_network_footer {
+        margin: 10px 0 0 0;
+    }
+}

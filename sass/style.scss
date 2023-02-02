@@ -1,0 +1,785 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgb(245, 245, 245);
+    width: 100%;
+    z-index: 999;
+        position: relative;
+
+    .morgin_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999;
+        position: relative;
+        padding: 0 15px 0px 15px;
+        transition: .4s;
+
+        .logo {
+            font-family: 'Rowdies', cursive;
+            font-size: 30px;
+            color: rgb(137, 87, 156);
+            padding: 20px 0 20px 0px;
+            text-decoration: none;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+
+            span {
+                color: rgb(29, 205, 205);
+            }
+        }
+
+        .search {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 0 15px;
+            width: 84%;
+            text-align: center;
+            transition: margin .3s, opacity .3s, pointer-events 0s;
+
+            
+        .input_search {
+            width: 100%;
+            height: 40px;
+            border-radius: 50px 0 0 50px;
+            border: solid rgba(0, 0, 0, 0.169) 1px;
+            outline: none;
+            padding: 0 0 0 10px;
+            font-size: 15px;
+
+        }
+        .button_search {
+            border-radius: 0 50px 50px 0;
+            border: none;
+            border-left: none;
+            width: 60px;
+            background: rgb(137, 87, 156);
+            color: white;
+            cursor: pointer;
+
+            img {
+                width: 25px;
+                text-align: center;
+                padding: 3px 3px 0 0;
+            }
+        }
+        }  
+
+        .number {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            background: url(../img/free-icon-phone-call-5585562.png) no-repeat;
+            background-size: 16px;
+            padding: 0 0px 6px 20px;
+            margin: 0 10px 0 0;
+            white-space: nowrap;
+        }
+
+        .icons {
+            display: flex;
+            align-items: baseline;
+        }
+
+        .lupa_two {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.397);
+            padding: 0 15px 0 15px;
+            cursor: pointer;
+            display: none;
+            @media ( max-width: 430px){
+                padding: 0 10px 0 15px;
+            }
+
+        img{
+            width: 30px;
+            margin: 0px 10px 0 0;
+
+            @media ( max-width: 430px){
+                width: 20px;
+                margin: 0 0 0 4px;
+            }
+        }
+
+        .lupa_two_text {
+            font-size: 14px;
+                font-weight: 400;
+                padding: 0px 0 0 0;
+
+                @media ( max-width: 430px){
+                    font-size: 13px;
+                }
+        }
+    }
+        
+        .cart {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.397);
+            border-left: solid rgba(0, 0, 0, 0.169) 1px;
+            padding: 0 0px 0 15px;
+
+            @media ( max-width: 430px){
+                padding: 0 0 0 10px;
+            }
+
+            img {
+                width: 30px;
+
+                @media ( max-width: 430px){
+                    width: 20px;
+                }
+            }
+            .cart_text {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 5px 0 0 0;
+
+                @media ( max-width: 430px){
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .menu {
+        background: white;
+        border-bottom: solid rgb(245, 245, 245) 1px;
+        position: relative;
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto 0px auto;
+            padding: 0 15px 0 15px;
+
+        .men {
+            display: flex;
+            padding: 15px 0 15px 0;
+            overflow: auto;
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+              }
+
+            .rem_men {
+                border-right: solid rgba(0, 0, 0, 0.306) 1px;
+                padding: 0 20px 0 0;
+            }
+
+        .rem {
+            list-style-type: none;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.607);
+            margin: 0 20px 0 0;
+            font-size: 14px;
+
+            &:hover {
+                color: rgb(137, 87, 156);
+            }
+        }
+    }
+
+    .rem:last-child {
+        border-right: solid rgba(0, 0, 0, 0.306) 1px;
+        padding: 0 15px 0 0;
+
+        @media (max-width: 1000px) {
+            border-right: none;
+        }
+    }
+
+    .soc_network {
+        margin: 0 0 0 -7px;
+        img {
+            width: 23px;
+            margin: 0 5px;
+            padding: 10px 0 10px 0;
+        }
+    }
+    }
+
+    .opas {
+        position: absolute;
+        height: 100%;
+        width: 50px;
+        background: black;
+        top: 0;
+        right: 0;
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 95%, rgba(255,255,255,1) 100%);
+    }
+}
+}
+
+@media (max-width: 1270px) { 
+    .number {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) { 
+    .soc_network {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) { 
+
+    .search {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+        
+    }
+    .header .container .lupa_two {
+        display: block;
+    }
+}
+
+@media (max-width: 430px) { 
+    .header .container .logo {
+        font-size: 25px;
+    }
+}
+@media (max-width: 370px) { 
+    .header .container .logo {
+        font-size: 20px;
+    }
+}
+@media (max-width: 320px) { 
+    .header .container .logo {
+        font-size: 16px;
+        padding: 20px 0 25px 0;
+    }
+}
+
+.search.active {
+    opacity: 1;
+    pointer-events: all;
+    margin: 117px auto 0 auto;
+    z-index: 1;
+}
+
+.morgin_header.active {
+    padding: 0 15px 50px 15px;
+}
+
+// SLIDER
+
+.slider {
+    padding: 0 15px;
+    margin: 20px 0 0 0;
+}
+
+.slider_item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.slider_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slick-dots {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media ( max-width: 600px){
+        margin: -7px 0 0 0;
+    }
+}
+
+.slick-dots button{
+   font-size: 0;
+   margin: 0 5px;
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   padding: 5px;
+
+   &:hover {
+    background: rgb(137, 87, 156);
+   }
+   @media ( max-width: 600px){
+    padding: 3px;
+}
+}
+
+.slick-active button{
+    background: rgb(137, 87, 156);
+}
+
+//two block
+
+.two_block {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15px 0 15px;
+    flex-wrap: wrap;
+}
+
+.two_block_item {
+    width: 32%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    background: black;
+    margin: 0 0 10px 0;
+    
+}
+
+@media ( max-width: 650px){
+    .two_block_item {
+        width: 49%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        background: black;
+        margin: 0 0 10px 0;
+
+        &:last-child {
+            width: 99%;
+        }
+    }
+    
+}
+
+@media ( max-width: 360px){
+    .two_block_item {
+        width: 99%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        background: black;
+        margin: 0 0 10px 0;
+
+        &:last-child {
+            width: 99%;
+        }
+    }
+    
+}
+
+.two_block_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .6;
+    transition: opacity 0s, transform .3s;
+
+    &:hover {
+        transform: scale(1.1);
+        opacity: .6;
+      }
+}
+
+.tbi_text  {
+    position: absolute;
+    color: white;
+    top: 30px;
+    left: 20px;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.tbi_text h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.tbi_text p {
+    font-size: 17px;
+    padding: 10px 5px 0 0;
+    font-weight: 300;
+}
+
+.card_product {
+    height: auto;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    margin: 10px 10px;
+    position: relative;
+}
+
+.CP_pic {
+    width: 100%;
+    height: 24vw;
+    max-height: 370px;
+    border-radius: 20px;
+    margin: 0 0 95px 0;
+}
+
+.CP_pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.CP_title {
+    width: 100%;
+    height: 43px;
+    padding: 10px 0 0 0;
+    font-size: 17px;
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+
+    &:hover {
+        color: rgb(137, 87, 156);
+    }
+}
+
+
+.CP_subtitle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 0 0;
+    justify-content: space-between;
+}
+
+.CP_price {
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0 10px 0 0;
+
+}
+
+.discont_price {
+    color: rgb(215, 73, 73);
+&::after {
+    content: '1050₽';
+    font-size: 13px;
+    text-decoration: line-through;
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+}
+}
+
+.buy {
+    background: rgb(137, 87, 156);
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+
+    &:hover {
+        background: rgb(151, 102, 171);
+    }
+}
+
+.discont {
+    width: 40px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.catalog_home {
+    display: grid;
+    margin: 20px 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.CP_text {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+}
+
+@media ( max-width: 1100px){
+    .catalog_home {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .CP_pic {
+        height: 30vw;
+    }
+    .CP_pic {
+       
+        max-height: 570px;
+    }
+}
+
+@media ( max-width: 900px){
+    .catalog_home {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .CP_pic {
+        height: 45vw;
+        margin: 0 0 90px 0;
+    }
+
+    .CP_price {
+        font-size: 22px;
+    }
+
+    .buy {
+        padding: 7px 17px;
+    }
+
+    .CP_pic {
+        max-height: 400px;
+    }
+
+}
+
+@media ( max-width: 650px){ 
+    .catalog_home {
+        grid-template-columns: 1fr 1fr;
+    }
+    .CP_pic {
+        height: 70vw;
+        margin: 0 0 90px 0;
+        max-height: 400px;
+    }
+}
+
+@media ( max-width: 350px){ 
+    .CP_pic {
+        height: 70vw;
+        margin: 0 0 85px 0;
+        max-height: 440px;
+    }
+
+    .buy {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+    .CP_price {
+        font-size: 20px;
+    }
+
+    .discont_price {
+    
+        &::after {
+            content: '950₽';
+            font-size: 13px;
+            text-decoration: line-through;
+            color: black;
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+        }
+        }
+}
+
+.oglav {
+    margin: 30px 15px -10px 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.758);
+
+}
+
+.button_home {
+    color: rgb(151, 102, 171);
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    margin: 50px 0 50px 0;
+    text-decoration: none;
+    
+}
+
+.bh_text {
+    border: solid rgb(151, 102, 171) 1px;
+    display: inline;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.bh_text.active {
+    background: rgb(151, 102, 171);
+    color: white;
+}
+
+.company {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 50px 15px 20px 15px;
+ flex-wrap: wrap;
+}
+
+.company_item {
+    width: 18%;
+    margin: 20px 10px;
+
+}
+
+.company_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media ( max-width: 800px){ 
+
+    .company {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 15px 20px 15px;
+        flex-wrap: wrap;
+       }
+
+    .company_item {
+        width: 40%;
+    }
+}
+
+.footer {
+    background: rgb(245, 245, 245);
+
+    .container_footer {
+        max-width: 1270px;
+        margin: 0 auto;
+        padding: 10px 0 30px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .logo {
+            font-family: 'Rowdies', cursive;
+            font-size: 30px;
+            color: rgb(137, 87, 156);
+            padding: 0px 0 0px 15px;
+            text-decoration: none;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+
+            span {
+                color: rgb(29, 205, 205);
+            }
+
+            @media ( max-width: 400px){ 
+                font-size: 20px;
+            }
+        }
+        .men_footer {
+            display: flex;
+            width: 70%;
+            flex-wrap: wrap;
+            margin: 20px 15px 0 10px;
+            padding: 0 0 20px 0;
+
+            .rem_footer {
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.627);
+                list-style-type: none;
+                margin: 5px 5px;
+                font-weight: bold;
+
+                &:hover {
+                    color: rgb(137, 87, 156);
+                }
+            }
+
+            .rem_men_footer {
+                border-right: solid rgba(0, 0, 0, 0.506) 1px;
+                padding: 0 10px 0 0;
+            }
+        }
+
+        .footer_right {
+            margin: 10px 0 0 0;
+            display: flex;
+            justify-content: end;
+          
+            
+
+        .number_footer {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.712);
+            font-weight: bold;
+            background: url(../img/free-icon-phone-call-5585562.png) no-repeat;
+            background-size: 23px;
+            font-size: 22px;
+            padding: 0 0px 6px 30px;
+            margin: 0 10px 0 0;
+
+            @media ( max-width: 400px){ 
+                font-size: 18px;
+                background-size: 18px;
+                padding: 0 0 6px 18px;
+            }
+        }
+
+        .soc_network_footer {
+            padding: 0 15px 0 20px;
+            a {
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    } 
+}
+}
+
+.discl {
+    padding: 30px 0 0 15px;
+    color: rgba(0, 0, 0, 0.837);
+}
+
+@media ( max-width: 730px){ 
+
+    .container_footer{
+        align-items: baseline;
+    }
+    .footer_right {
+        flex-direction: column;
+        margin: 0 0 0 0px;
+    }
+    .footer_left {
+        margin: 0 20px 0 0px;
+    }
+    .soc_network_footer {
+        margin: 10px 0 0 0;
+    }
+}

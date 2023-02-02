@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style_shop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>MANGA HOUSE</title>
+</head>
+<body class="body">
+    <div class="men_wrap"></div>
+    <header class="header">
+        <div class="container morgin_header">
+            <a href="./index.html" class="logo">MANGA <span>HOUSE</span></a>
+            <div class="search">
+                <input class="input_search" placeholder="Поиск по названию" type="text">
+                <button class="button_search"><img src="./img/lupa.png" alt=""></button>
+            </div>
+            <a class="number" href="tel:+1 (234) 567 89 10">+1 (234) 567 89 10</a>
+            <div class="icons">
+
+            <div class="lupa_two">
+            <img src="./img/free-icon-magnifier-2311526.png" alt="">
+            <div class="lupa_two_text">Поиск</div>
+            </div>
+            <a href="#" class="cart">
+                <img src="./img/free-icon-shopping-cart-711897.png" alt="">
+                <div class="cart_text">Корзина</div>
+            </a>
+        </div>
+        </div>
+        <menu class="menu">
+            <div class="container">
+                <ul class="men">
+                    <a class="rem" href="./index.html">
+                        <li>Главная</li>
+                        </a>
+                    <a class="rem rem_men" href="./shop.html">
+                        <li>Каталог</li>
+                        </a>
+                    <a class="rem rem_one" href="./popular.html">
+                        <li>Популярное</li>
+                            </a>   
+                    <a class="rem rem_foure" href="./new.html">
+                        <li>Новинки</li>
+                            </a>
+                    <a class="rem rem_five" href="./discounts.html">
+                        <li>Скидки</li>
+                            </a>
+                    <a class="rem rem_six" href="./renobs.html">
+                        <li>Ренобэ</li>
+                            </a>    
+                </ul> 
+            <div class="soc_network">
+                <a href="https://web.telegram.org/"><img src="./img/telegram.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a>
+                <a href="https://ru.pinterest.com/"><img src="./img/pinterest.png" alt=""></a>
+            </div>
+        </div>
+        <div class="opas"></div>
+        </menu>
+    </header>
+    <main class="main">
+        <div class="container">
+            <button class="active_filter">Фильтр</button>
+            <div class="first_block">
+                <aside data-swipe-threshold="20"
+                data-swipe-timeout="500"
+                data-swipe-ignore="false" class="aside">
+                    <div class="cross">×</div>
+                    <h3>Фильтр</h3>
+                    <ul class="men_sidebar">
+                        <li>
+                            <input id="All_categories" checked type="checkbox" name="a" value="">
+                            <label for="All_categories">Все категории</label>
+                        </li>
+                        <li>
+                            <input id="Popular" type="checkbox" name="a" value="">
+                            <label for="Popular">Популярное</label>
+                        </li>
+                        <li>
+                            <input id="New" type="checkbox" name="a" value="">
+                            <label for="New">Новинки</label>
+                        </li>
+                        <li>
+                            <input id="Romance" type="checkbox" name="a" value="">
+                            <label for="Romance">Романтика</label>
+                        </li>    
+                        <li>
+                            <input id="Shounen" type="checkbox" name="a" value="">
+                            <label for="Shounen">Сёнэны</label>
+                        </li>
+                        <li>
+                            <input id="Fantasy" type="checkbox" name="a" value="">
+                            <label for="Fantasy">Фантастика</label>
+                        </li>
+                        <li>
+                            <input id="Comedy" type="checkbox" name="a" value="">
+                            <label for="Comedy">Комедии</label>
+                        </li>    
+                            
+                    </ul> 
+                    <h3>Цена</h3>
+                    <div class="filter_prise">
+                        <div class="ot_ot">от</div>
+                    <input value="0" class="ot" placeholder="от 0₽" type="number" name="" id="ot">
+                    <div class="do_do">до</div>
+                    <input value="9000" placeholder="до 12 000₽" type="number" name="" id="do">
+                </div>
+                <button class="filter_button">Применить фильтр</button>
+                </aside>
+                <div class="catalog">
+                    <div class="no_one">
+                        <div class="no_one_text">Ничего не найдено :(</div>
+                    </div>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Shounen">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/02/hakWXWz11qYtIgO3rT8CTfKpU5tF81O76mLTe6cr-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Магическая битва. Том 4.</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price discont_price">
+                                  <span class="price">830</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                            <img class="discont" src="./img/free-icon-discount-726476.png" alt="">
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Fantasy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/01/WkYNCzUFAgazRADUPJyz4a87ryKJopsQCAwVadHv-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Моя геройская академия. Книга 12</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">775</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Popular">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/29/xrMbaLMVLQgGgVxsVzJTob4DSda3UbvRnWBwFxYw-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">One Piece. Большой куш. Книга 12.</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">915</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div></div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Romance">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/10/27/qzuaboMtjNlQMqChcz3zl0i9789Dy1OkWQkI13qB-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">Ты мой!</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">885</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Fantasy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/11/28/Db8HBF4iOxzZYyDAP50u4hbMfdn35Z5Xe2t2rUkI-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Волчица и пряности. Том 10</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">700</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product New">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/11/28/7w4Tav2mgCslEZJHzXX5noVRcHF7o2cxc3VjxuJH-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Истребитель демонов. Том 4. Достойная катана</div>
+                            <div class="CP_subtitle">
+                                <div id="iu" class="CP_price">
+                                    <span class="price">660</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Romance">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/05/fULbDUI43ZJd6V48YfkkY7Ecdd3qHKdTQ9qMsYui-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Госпожа Кагуя: В любви как на войне. Книга 8</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">850</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Fantasy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/08/02/MSbawy8emwlpTJTr826sEJGfCkVcjGGPEFvzlaSl-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">Берсерк. Том 5.</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">1050</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div></div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Comedy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/09/07/w8P98fnhjUvzTOJUv0GO8kFocVXomktTbaPk1vMI-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">Госпожа Кагуя: В любви как на войне. Любовная битва двух гениев. Книга 7.</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">650</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Popular">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/08/01/xPON7AJ3l409g3cqjXTFbXkmm89fCBuxWDiRMrEj-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Человек-Бензопила. Книга 5.</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">970</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Fantasy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/09/23/uxWsyg7iObYI5Q33Q2bomB5EMM59dJkOKaUVkerk-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Новый век: Евангелион. Книга 2</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">590</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Shounen">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/08/03/8nlfwbWgOMOdZcqiY88rwS3biARtAQG2gFe0mh9u-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Нарутo. Книга 8</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">635</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Comedy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/08/12/BcHd6jPYO3GzbdDZKKofhAnQXO4ooG6BO7Wwa55v-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">SPY×FAMILY: Семья шпиона. Том 1</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">730</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div></div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Shounen">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/08/16/vkNKUctIryTJpemo1rJ64x25zSQfN7u9UjQpDcwm-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">Моб Психо 100. Том 1.</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">1115</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Popular">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/05/31/oxlOzDFglR8owK1VQBlAwAHS1wfJ6qf9XGuQMHCA-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Монстр. Том 1.</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">450</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Fantasy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2020/04/03/wIKsrQU9T7mFexBVtCeAHMR2zSPUFkq70Khz0EMz-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Токийский гуль: re. Книга 1.</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">590</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Shounen">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/29/V1NmvRjaFYWpFtFDbLVvvMAwP2f6hZr3FxhZfV3U-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Сердца Пандоры. Книга 9</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price discont_price">
+                                  <span class="price">829</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                            <img class="discont" src="./img/free-icon-discount-726476.png" alt="">
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product New">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/19/DVjKnRXaWNKQmeXeXCoGsSObvUmmLQamOYfPdbrM-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Beastars. Выдающиеся звери. Том 9</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">829</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Comedy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/07/AfASu6l7hQwPQeSrNdfYpAnMRAmmYO2GPlEXsfHr-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">
+                            GTO. Крутой учитель Онидзука. Том 3.</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">1500</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div></div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Popular">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/11/28/JNGL38GvVtv4m8GgG0cCETM2OmUxVzHR8HMAsjGJ-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">
+                            Истребитель демонов. Том 6. На суде у столпов</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">660</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Fantasy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/11/28/kHPcOpn4Xbu2ET2vR1S2e2Hoiqslxc7OJG8lmDcG-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">
+                                Туалетный мальчик Ханако. Том 2</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">690</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Popular">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/08/30/18KpLSBJIBOxtGEsLDfTX8ikBNPRhxARxwCbEbnS-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">
+                                Человек-Бензопила. Книга 6.</div>
+                            <div class="CP_subtitle">
+                                <div id="iu" class="CP_price">
+                                    <span class="price">650</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Comedy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/08/12/7Hw61wP1hrmNNefvoQ3s9zk5bFtRZcrAi2tNOQGw-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">
+                                SPY×FAMILY: Семья шпиона. Том 3</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">660</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Shounen">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2023/01/18/QZnikolOJvDcsUc0jAkrs1RnsedovijJCeYI1PIZ-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">Проза бродячих псов. Том 11.</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">730</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div></div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Comedy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/11/09/s3OjJLnrezB0D0XemD23kAfW0vq2AUdGBazQSEMl-736x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">Милый дом Чи. Книга 11.</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">490</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Fantasy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/11/25/NzmxHAoQjQwKoO7o1fceWNaSl9zaFfipMqO6EpFj-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Хвост Феи. Том 19.</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">475</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product New">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/05/JGUKpb62YXFAdJMWKc65mwKx5ZPCdsUyZd8IdzfT-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Бригада пылающего пламени. Том 3.</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">675</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Popular">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/12/09/ruAXThmJlaoQcitmHQJrHNEs5R6QIOuqGLNPCoyK-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Токийские мстители. Том 5.</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">830</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Shounen">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/08/08/8QpDdLXBvyuPgVOgkcdCu3dYNgJVUMToo4PJSOFL-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">One-Punch Man. Книга 12</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">773</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div></div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product New">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/07/01/PhliGhXIHSvxWrxrLstolIXjSe6IjsSV9QPSdMeb-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                        <div class="CP_title">Моя геройская академия. Книга 10</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">773</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Fantasy">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2022/06/14/LQqDvj51aL7sLUkI7nLKTQaLwP95jblIuy4tLEqI-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Стальной Алхимик. Книга 17</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">1025</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                    <a href="./product.html" id="CP" class="All_categories hidden card_product Shounen">
+                        <div class="CP_pic">
+                            <img src="https://xlm.ru/storage/uploads/images/2021/12/30/ztjc6vGabz3CXKepPW8XLwORC6P900s4vsWbIHbI-480x_.jpeg.webp" alt="">
+                        </div>
+                        <div class="CP_text">
+                            <div class="CP_title">Naruto. Наруто. Книга 6.</div>
+                            <div class="CP_subtitle">
+                                <div class="CP_price">
+                                    <span class="price">926</span>₽
+                                </div>
+                                <div class="buy" href="#">В корзину</div></div>
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="button_shop">
+            <div class="bh_text_shop">
+            Показать ещё</div>
+        </div>
+
+        <div class="container">
+        <div class="likeit_wrap">
+            <div class="likeit_text">Топ продаж</div>
+            <div class="likeit">
+                <a href="./product.html" id="CP" class="top_product card_product">
+                    <div class="CP_pic">
+                        <img src="https://xlm.ru/storage/uploads/images/2022/11/28/Db8HBF4iOxzZYyDAP50u4hbMfdn35Z5Xe2t2rUkI-480x_.jpeg.webp" alt="">
+                    </div>
+                    <div class="CP_text">
+                        <div class="CP_title">Волчица и пряности. Том 10</div>
+                        <div class="CP_subtitle">
+                            <div class="CP_price">
+                                <span class="price">850</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div></div>
+                        </div>
+                </a>
+                <a href="./product.html" id="CP" class="top_product card_product">
+                    <div class="CP_pic">
+                        <img src="https://xlm.ru/storage/uploads/images/2022/11/28/7w4Tav2mgCslEZJHzXX5noVRcHF7o2cxc3VjxuJH-480x_.jpeg.webp" alt="">
+                    </div>
+                    <div class="CP_text">
+                        <div class="CP_title">Истребитель демонов. Том 4. Достойная катана</div>
+                        <div class="CP_subtitle">
+                            <div id="iu" class="CP_price">
+                                <span class="price">850</span>₽
+                            </div>
+                            <div class="buy" href="#">В корзину</div></div>
+                        </div>
+                </a>
+            <a href="./product.html" id="CP" class="top_product card_product">
+                <div class="CP_pic">
+                    <img src="https://xlm.ru/storage/uploads/images/2022/12/29/xrMbaLMVLQgGgVxsVzJTob4DSda3UbvRnWBwFxYw-480x_.jpeg.webp" alt="">
+                </div>
+                <div class="CP_text">
+                <div class="CP_title">One Piece. Большой куш. Книга 12.</div>
+                <div class="CP_subtitle">
+                    <div class="CP_price">
+                        <span class="price">850</span>₽
+                    </div>
+                    <div class="buy" href="#">В корзину</div></div>
+                </div>
+            </a>
+            <a href="./product.html" id="CP" class="top_product card_product">
+                <div class="CP_pic">
+                    <img src="https://xlm.ru/storage/uploads/images/2022/12/01/WkYNCzUFAgazRADUPJyz4a87ryKJopsQCAwVadHv-480x_.jpeg.webp" alt="">
+                </div>
+                <div class="CP_text">
+                    <div class="CP_title">Моя геройская академия. Книга 12</div>
+                    <div class="CP_subtitle">
+                        <div class="CP_price">
+                            <span class="price">850</span>₽
+                        </div>
+                        <div class="buy" href="#">В корзину</div></div>
+                    </div>
+            </a>
+            <a href="./product.html" id="CP" class="top_product card_product">
+                <div class="CP_pic">
+                    <img src="https://xlm.ru/storage/uploads/images/2022/12/05/fULbDUI43ZJd6V48YfkkY7Ecdd3qHKdTQ9qMsYui-480x_.jpeg.webp" alt="">
+                </div>
+                <div class="CP_text">
+                    <div class="CP_title">Госпожа Кагуя: В любви как на войне. Книга 8</div>
+                    <div class="CP_subtitle">
+                        <div class="CP_price">
+                            <span class="price">850</span>₽
+                        </div>
+                        <div class="buy" href="#">В корзину</div></div>
+                    </div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+    </main>
+
+
+    <footer class="footer"> 
+        <div class="container_footer">
+            <div class="footer_left">
+            <a href="#" class="logo">MANGA <span>HOUSE</span></a>
+            <ul class="men_footer">
+                <a class="rem_footer" href="./index.html">
+                    <li>Главная</li>
+                    </a>
+                <a class="rem_footer rem_men_footer" href="./shop.html">
+                    <li>Каталог</li>
+                    </a>
+                <a class="rem_footer" href="./popular.html">
+                    <li>Популярное</li>
+                        </a>
+                <a class="rem_footer" href="./new.html">
+                    <li>Новинки</li>
+                        </a>
+                <a class="rem_footer" href="./discounts.html">
+                    <li>Скидки</li>
+                        </a>    
+                <a class="rem_footer" href="./renobs.html">
+                    <li>Ренобэ</li>
+                        </a>    
+            </ul> 
+            <div class="discl">
+                © Интернет-магазин MANGA HOUS. Все права защищены.
+            </div>
+        </div>
+        <div class="footer_right">
+            <a class="number_footer" href="tel:+1 (234) 567 89 10">+1 (234) 567 89 10</a>
+            <div class="soc_network_footer">
+                <a href="https://web.telegram.org/"><img src="./img/telegram.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a>
+                <a href="https://ru.pinterest.com/"><img src="./img/pinterest.png" alt=""></a>
+            </div>
+        </div>
+        </div>
+    </footer>
+    
+<!-------------------------------------------->
+<script src="lids/jquery-321min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/script-shop.js"></script>
+</body>
+</html>
